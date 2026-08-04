@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drones</title>
+</head>
+
+<style>
+
+    .hero {
+    background-image: url("drone-images6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    width: 100%;
+    min-height: 60vh;
+}
+   body{
+    background-color:gainsboro;
+   }
+    h1{
+        font-family:Georgia, 'Times New Roman', Times, serif,bold;
+        font-size:50px;
+    }
+    p{
+        font-size:20px;
+        font-family:lucida handwriting;
+    }
+    .grid-parent{
+        display:grid;
+        gap:10px;
+        background-color:black;
+        
+    }
+    .grid-child{
+        &:nth-child(1){
+            background-color:gainsboro;
+        
+        }
+    }
+    div{
+        padding:20px;
+        text-align: start;
+        font-size:15px;
+    }
+    div2{
+        text-align:center;
+        font-size:15px;
+        padding:20px;
+    }
+    .grid-parent2{
+        display:grid;
+        gap:10px;
+        place-items:center;
+        background-color:black;
+    }
+    .grid-child2{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        place-items:center;
+        color:white;
+    }
+.grid-parent3{
+        display:grid;
+        gap:10px;
+        place-items:center;
+        background-color:cadetblue;
+    }
+    .grid-child3{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        place-items:center;
+        color:white;
+    }
+    .grid-parent4{
+        display:grid;
+        gap:10px;
+        place-items:center;
+        background-color:burlywood;
+    }
+    .grid-child4{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        place-items:center;
+        color:black;
+    }
+    
+
+    
+    .grid-parent5{
+        display:grid;
+        gap:10px;
+        background-color:black;
+        place-items:start;
+    }
+    .grid-child5{
+        font-family:cascadia code;
+        font-size:20px;
+        color:white;
+    }
+
+
+</style>
+<body>
+    <div class="hero">
+    <h1 style="color:white;"><b>Take pictures
+        <br> from a far distance!</b></h1>
+        <img src="design.webp"width="300"height="130">
+        </div>
+    <br>
+    
+    <div class="grid-parent">
+        <div2 class="grid-child"><i><b>About Us</b></i><br><br>
+
+Welcome to our world of drone innovation. We are passionate about using advanced drone technology to deliver reliable, efficient, and high-quality aerial solutions for individuals and businesses alike.<br><br>
+
+Our mission is to make aerial photography, videography, surveying, inspection, and mapping more accessible through cutting-edge equipment and skilled expertise. We are committed to safety, precision, and innovation, ensuring every project is completed with the highest professional standards.<br><br>
+
+Whether you're looking to capture breathtaking aerial footage, monitor large areas, or explore the latest drone technology, our team is dedicated to providing exceptional service and outstanding results. We believe drones are transforming the way people see and interact with the world, and we are proud to be part of that journey.<br><br>
+
+Thank you for choosing us. We look forward to helping you take your vision to new heights.</div>
+</div2>
+    </div><br>
+
+
+    <div class="grid-parent2">
+
+    <img src="DroneForSell1.jpg"width="300px"height="200px";>
+    <div class="grid-child2">Price: $100<br>discount:$10</div>
+    </div>
+
+    <div class="grid-parent3">
+        <img src="DroneForSell2.jpg"width="300px"height="200px";>
+        <div class="grid-child3">price:$120<br>discount:$10</div>
+    </div>
+
+    <div class="grid-parent4">
+        <img src="DroneForSell3.jpg"width="300px"height="200px";>
+        <div class="grid-child4">price:$200<br>discount:$10</div>
+    </div>
+
+<hr>
+
+    <div class="grid-parent5">
+        <div class="grid-child5">Contact Us: 0189278392</div>
+    </div>
+    <script>
+       function updateBackground() {
+    const hero = document.querySelector(".hero");
+
+    if (window.innerWidth <= 768) {
+        hero.style.backgroundImage = "url('drone-mobile.png')";
+    } else {
+        hero.style.backgroundImage = "url('drone-images6.jpg')";
+    }
+}
+
+updateBackground();
+window.addEventListener("resize", updateBackground);
+    </script>
+</body>
+</html>
